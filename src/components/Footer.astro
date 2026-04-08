@@ -1,0 +1,56 @@
+---
+import { company, navLinks } from "../lib/company";
+---
+
+<footer class="bg-gray-900 text-gray-300 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Column 1: Quick Links -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Szybkie linki</h3>
+        <ul class="space-y-2">
+          {navLinks.map((link) => (
+            <li>
+              <a href={link.href} class="hover:text-primary transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Column 2: Contact -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Kontakt</h3>
+        <ul class="space-y-2">
+          <li>{company.adres.ulica}</li>
+          <li>{company.adres.kod} {company.adres.miasto}</li>
+          <li>
+            <a href={company.telefonLink} class="hover:text-primary transition-colors">
+              {company.telefon}
+            </a>
+          </li>
+          <li>
+            <a href={`mailto:${company.email}`} class="hover:text-primary transition-colors">
+              {company.email}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Opening Hours -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Godziny otwarcia</h3>
+        <ul class="space-y-2">
+          <li>Poniedziałek - Piątek: {company.godziny.pn_pt}</li>
+          <li>Sobota: {company.godziny.sobota}</li>
+          <li>Niedziela: {company.godziny.niedziela}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500">
+      &copy; {new Date().getFullYear()} {company.pelna_nazwa}. Wszelkie prawa zastrzeżone.
+    </div>
+  </div>
+</footer>
