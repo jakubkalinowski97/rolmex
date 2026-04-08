@@ -1,0 +1,16 @@
+---
+import { company } from "../lib/company";
+---
+
+<div class="rounded-xl overflow-hidden shadow-sm">
+  <iframe
+    src={company.mapa.embedUrl}
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Mapa — lokalizacja Rolmex"
+  ></iframe>
+</div>

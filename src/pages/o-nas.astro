@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { company } from "../lib/company";
+---
+
+<Layout title="O nas" description="Poznaj wypożyczalnię sprzętu ogrodowego Rolmex.">
+  <section class="py-12 lg:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-8">O nas</h1>
+
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="aspect-[3/1] bg-gray-200">
+          <div class="w-full h-full flex items-center justify-center text-gray-400 text-lg">
+            Zdjęcie wypożyczalni
+          </div>
+        </div>
+
+        <div class="p-6 lg:p-10 prose prose-gray prose-lg max-w-none">
+          <p>
+            <strong>{company.pelna_nazwa}</strong> to firma z wieloletnim doświadczeniem w branży ogrodniczej.
+            Oferujemy profesjonalny sprzęt ogrodowy do wynajęcia dla klientów indywidualnych i firm.
+          </p>
+
+          <h2>Nasza misja</h2>
+          <p>
+            Wierzymy, że każdy zasługuje na dostęp do profesjonalnego sprzętu ogrodowego bez konieczności
+            jego zakupu. Dlatego oferujemy szeroki wybór maszyn i narzędzi w atrakcyjnych cenach,
+            z gwarancją sprawności i fachowym doradztwem.
+          </p>
+
+          <h2>Dlaczego warto wypożyczać?</h2>
+          <ul>
+            <li>Oszczędzasz pieniądze — płacisz tylko za czas, kiedy używasz sprzętu</li>
+            <li>Nie martwisz się o serwis i konserwację</li>
+            <li>Masz dostęp do profesjonalnych maszyn znanych marek</li>
+            <li>Możesz przetestować sprzęt przed ewentualnym zakupem</li>
+          </ul>
+
+          <h2>Nasz sprzęt</h2>
+          <p>
+            Dysponujemy szeroką gamą sprzętu ogrodowego renomowanych producentów: Honda, STIHL,
+            Husqvarna, Makita i wielu innych. Każde urządzenie jest regularnie serwisowane
+            i sprawdzane przed każdym wypożyczeniem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
