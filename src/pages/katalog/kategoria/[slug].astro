@@ -1,0 +1,86 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import EquipmentCard from "../../../components/EquipmentCard.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const categories = await getCollection("category");
+  return categories.map((cat) => ({
+    params: { slug: cat.data.slug },
+    props: { category: cat },
+  }));
+}
+
+const { category } = Astro.props;
+
+const categories = (await getCollection("category")).sort(
+  (a, b) => (a.data.kolejnosc ?? 99) - (b.data.kolejnosc ?? 99)
+);
+
+const equipment = (await getCollection("equipment")).filter(
+  (e) => e.data.kategoria && (typeof e.data.kategoria === 'string'
+    ? e.data.kategoria.includes(category.id)
+    : e.data.kategoria?.id === category.id)
+);
+---
+
+<Layout title={category.data.nazwa} description={category.data.opis}>
+  <section class="py-12 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-2">{category.data.nazwa}</h1>
+      {category.data.opis && <p class="text-text-light text-lg mb-8">{category.data.opis}</p>}
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar -->
+        <aside class="lg:w-64 shrink-0">
+          <h2 class="font-bold text-lg mb-4">Kategorie</h2>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="/katalog"
+                class="block px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors text-text"
+              >
+                Wszystkie
+              </a>
+            </li>
+            {categories.map((cat) => (
+              <li>
+                <a
+                  href={`/katalog/kategoria/${cat.data.slug}`}
+                  class:list={[
+                    "block px-3 py-2 rounded-lg transition-colors",
+                    cat.data.slug === category.data.slug
+                      ? "bg-primary text-white font-medium"
+                      : "hover:bg-gray-100 text-text",
+                  ]}
+                >
+                  {cat.data.nazwa}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
+
+        <!-- Equipment Grid -->
+        <div class="flex-1">
+          <p class="text-text-light mb-6">{equipment.length} produktów</p>
+          {equipment.length > 0 ? (
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {equipment.map((item) => (
+                <EquipmentCard
+                  nazwa={item.data.nazwa}
+                  slug={item.data.slug}
+                  zdjecie={item.data.zdjecie}
+                  cena_doba={item.data.cena_doba}
+                  dostepny={item.data.dostepny}
+                />
+              ))}
+            </div>
+          ) : (
+            <p class="text-text-light">Brak sprzętu w tej kategorii.</p>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import EquipmentCard from "../../components/EquipmentCard.astro";
+import { getCollection } from "astro:content";
+
+const categories = (await getCollection("category")).sort(
+  (a, b) => (a.data.kolejnosc ?? 99) - (b.data.kolejnosc ?? 99)
+);
+const equipment = await getCollection("equipment");
+---
+
+<Layout title="Katalog sprzętu" description="Przeglądaj nasz katalog sprzętu ogrodowego do wypożyczenia.">
+  <section class="py-12 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-8">Katalog sprzętu</h1>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar: Category Filters -->
+        <aside class="lg:w-64 shrink-0">
+          <h2 class="font-bold text-lg mb-4">Kategorie</h2>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="/katalog"
+                class="block px-3 py-2 rounded-lg bg-primary text-white font-medium"
+              >
+                Wszystkie
+              </a>
+            </li>
+            {categories.map((cat) => (
+              <li>
+                <a
+                  href={`/katalog/kategoria/${cat.data.slug}`}
+                  class="block px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors text-text"
+                >
+                  {cat.data.nazwa}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
+
+        <!-- Equipment Grid -->
+        <div class="flex-1">
+          <p class="text-text-light mb-6">{equipment.length} produktów</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {equipment.map((item) => (
+              <EquipmentCard
+                nazwa={item.data.nazwa}
+                slug={item.data.slug}
+                zdjecie={item.data.zdjecie}
+                cena_doba={item.data.cena_doba}
+                dostepny={item.data.dostepny}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
