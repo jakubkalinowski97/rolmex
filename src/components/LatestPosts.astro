@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog"))
+  .sort((a, b) => new Date(b.data.data).getTime() - new Date(a.data.data).getTime())
+  .slice(0, 3);
+---
+
+<section class="py-16 lg:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-text">Z naszego bloga</h2>
+      <p class="mt-4 text-text-light text-lg">Porady i wskazówki dotyczące pielęgnacji ogrodu</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {posts.map((post) => (
+        <a
+          href={`/blog/${post.data.slug}`}
+          class="group block bg-bg rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-200"
+        >
+          <div class="aspect-video bg-gray-200 overflow-hidden">
+            {post.data.zdjecie ? (
+              <img
+                src={post.data.zdjecie}
+                alt={post.data.tytul}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            ) : (
+              <div class="w-full h-full flex items-center justify-center text-gray-400">Blog</div>
+            )}
+          </div>
+          <div class="p-5">
+            <time class="text-sm text-text-light">
+              {new Date(post.data.data).toLocaleDateString("pl-PL", { year: "numeric", month: "long", day: "numeric" })}
+            </time>
+            <h3 class="mt-2 font-bold text-lg group-hover:text-primary transition-colors">{post.data.tytul}</h3>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="/blog" class="text-primary font-semibold hover:underline">
+        Wszystkie artykuły &rarr;
+      </a>
+    </div>
+  </div>
+</section>

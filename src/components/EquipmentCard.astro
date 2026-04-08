@@ -1,0 +1,39 @@
+---
+interface Props {
+  nazwa: string;
+  slug: string;
+  zdjecie?: string;
+  cena_doba: number;
+  dostepny?: boolean;
+}
+
+const { nazwa, slug, zdjecie, cena_doba, dostepny = true } = Astro.props;
+---
+
+<a
+  href={`/katalog/${slug}`}
+  class="group block bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 overflow-hidden"
+>
+  <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
+    {zdjecie ? (
+      <img
+        src={zdjecie}
+        alt={nazwa}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    ) : (
+      <div class="w-full h-full flex items-center justify-center text-gray-400">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+      </div>
+    )}
+  </div>
+  <div class="p-4">
+    <h3 class="font-semibold text-text group-hover:text-primary transition-colors">{nazwa}</h3>
+    <div class="mt-2 flex items-center justify-between">
+      <span class="text-primary font-bold text-lg">{cena_doba} zł<span class="text-sm text-text-light font-normal">/doba</span></span>
+      {!dostepny && (
+        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded-full font-medium">Niedostępny</span>
+      )}
+    </div>
+  </div>
+</a>

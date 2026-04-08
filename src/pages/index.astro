@@ -1,9 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import CategoryGrid from "../components/CategoryGrid.astro";
+import FeaturedEquipment from "../components/FeaturedEquipment.astro";
+import WhyUs from "../components/WhyUs.astro";
+import LatestPosts from "../components/LatestPosts.astro";
 ---
 
 <Layout title="Strona główna">
-  <div class="max-w-7xl mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold">Rolmex — w budowie</h1>
-  </div>
+  <HeroSection />
+  <CategoryGrid />
+  <FeaturedEquipment />
+  <WhyUs />
+  <LatestPosts />
 </Layout>
