@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import FaqAccordion from "../components/FaqAccordion.astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 const faqs = (await getCollection("faq")).sort(
   (a, b) => (a.data.kolejnosc ?? 99) - (b.data.kolejnosc ?? 99)
@@ -15,7 +15,7 @@ const faqs = (await getCollection("faq")).sort(
 
       <div class="bg-white rounded-xl shadow-sm p-6 lg:p-8">
         {faqs.map(async (faq, i) => {
-          const { Content } = await faq.render();
+          const { Content } = await render(faq);
           return (
             <FaqAccordion pytanie={faq.data.pytanie} index={i}>
               <Content />
