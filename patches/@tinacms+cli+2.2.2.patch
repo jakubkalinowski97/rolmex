@@ -1,7 +1,32 @@
 diff --git a/node_modules/@tinacms/cli/dist/index.js b/node_modules/@tinacms/cli/dist/index.js
-index 3d7f9bd..1c696e1 100644
+index 3d7f9bd..77051cc 100644
 --- a/node_modules/@tinacms/cli/dist/index.js
 +++ b/node_modules/@tinacms/cli/dist/index.js
+@@ -1560,13 +1560,13 @@ var devHTML = (port) => `<!DOCTYPE html>
+ 
+   <!-- if development -->
+   <script type="module">
+-    import RefreshRuntime from 'http://localhost:${port}/@react-refresh'
++    import RefreshRuntime from 'http://localhost:${port}/admin/@react-refresh'
+     RefreshRuntime.injectIntoGlobalHook(window)
+     window.$RefreshReg$ = () => {}
+     window.$RefreshSig$ = () => (type) => type
+     window.__vite_plugin_react_preamble_installed__ = true
+   </script>
+-  <script type="module" src="http://localhost:${port}/@vite/client"></script>
++  <script type="module" src="http://localhost:${port}/admin/@vite/client"></script>
+   <script>
+   function handleLoadError() {
+     // Assets have failed to load
+@@ -1575,7 +1575,7 @@ var devHTML = (port) => `<!DOCTYPE html>
+   </script>
+   <script
+     type="module"
+-    src="http://localhost:${port}/src/main.tsx"
++    src="http://localhost:${port}/admin/src/main.tsx"
+     onerror="handleLoadError()"
+   ></script>
+   <body class="tina-tailwind">
 @@ -1591,9 +1591,7 @@ import path5 from "node:path";
  import react from "@vitejs/plugin-react";
  import fs4 from "fs-extra";

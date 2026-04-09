@@ -18,7 +18,7 @@ const categories = (await getCollection("category"))
       {categories.map((cat) => (
         <a
           href={`/katalog/kategoria/${cat.data.slug}`}
-          class="group block bg-white rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 overflow-hidden"
+          class="group block bg-white rounded-2xl border border-border hover:border-primary transition-colors duration-200 overflow-hidden"
         >
           <div class="aspect-[4/3] bg-white overflow-hidden flex items-center justify-center p-4">
             {cat.data.zdjecie ? (

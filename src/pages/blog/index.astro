@@ -31,7 +31,7 @@ const posts = (await getCollection("blog")).sort(
           {posts.map((post) => (
             <a
               href={`/blog/${post.data.slug}`}
-              class="group bg-white rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 overflow-hidden flex flex-col"
+              class="group bg-white rounded-2xl border border-border hover:border-primary transition-colors duration-200 overflow-hidden flex flex-col"
             >
               <div class="aspect-[16/9] bg-slate-50 overflow-hidden">
                 {post.data.zdjecie ? (
