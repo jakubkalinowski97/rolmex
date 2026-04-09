@@ -8,9 +8,9 @@ cena_weekend: 150
 cena_tydzien: 420
 parametry:
   - nazwa: Napięcie
-    wartosc: 230 V, 1-fazowa
+    wartosc: '230 V, 1-fazowa'
   - nazwa: Moc poboru
-    wartosc: 3,30 kW
+    wartosc: '3,30 kW'
   - nazwa: Ciśnienie robocze
     wartosc: 10–150 bar
   - nazwa: Ciśnienie maksymalne
@@ -20,7 +20,7 @@ parametry:
   - nazwa: Masa
     wartosc: 31 kg
 dostepny: true
-wyroziony: true
+wyroziony: false
 ---
 
 Profesjonalna elektryczna myjka wysokociśnieniowa STIHL RE 170 Plus, przeznaczona do czyszczenia hal, pojazdów i maszyn. Oferuje bardzo wysokie ciśnienie oraz wyposażenie ułatwiające pracę.

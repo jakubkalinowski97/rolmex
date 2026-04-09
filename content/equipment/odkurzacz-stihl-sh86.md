@@ -10,19 +10,19 @@ parametry:
   - nazwa: Silnik
     wartosc: STIHL 2-MIX
   - nazwa: Pojemność skokowa
-    wartosc: 27,2 cm³
+    wartosc: '27,2 cm³'
   - nazwa: Moc
-    wartosc: 0,8 kW
+    wartosc: '0,8 kW'
   - nazwa: Masa
-    wartosc: 5,6 kg
+    wartosc: '5,6 kg'
   - nazwa: Przepływ powietrza (ssanie)
     wartosc: 770 m³/h
   - nazwa: Worek zbiorczy
     wartosc: 45 l
   - nazwa: Stopień rozdrabniania
-    wartosc: do 1:14
+    wartosc: 'do 1:14'
 dostepny: true
-wyroziony: false
+wyroziony: true
 ---
 
 Wszechstronne urządzenie STIHL SH 86 typu odkurzacz–rozdrabniacz i dmuchawa, do zbierania oraz usuwania liści i drobnych odpadów zielonych. Możliwość szybkiej zmiany trybu z odkurzacza na dmuchawę. Miękkie uchwyty i system antywibracyjny.

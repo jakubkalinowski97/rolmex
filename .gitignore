@@ -27,7 +27,7 @@ pnpm-debug.log*
 .idea/
 
 # TinaCMS generated files
-.tina/__generated__/
+tina/__generated__/
 
 # Superpowers
 .superpowers/

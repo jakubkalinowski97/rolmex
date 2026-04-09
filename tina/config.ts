@@ -1,7 +1,7 @@
 import { defineConfig } from "tinacms";
 
 export default defineConfig({
-  branch: process.env.GITHUB_BRANCH,
+  branch: process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main",
   clientId: process.env.TINA_CLIENT_ID || "",
   token: process.env.TINA_TOKEN || "",
   build: {
@@ -25,7 +25,8 @@ export default defineConfig({
           { type: "string", name: "nazwa", label: "Nazwa", required: true },
           { type: "string", name: "slug", label: "Slug URL", required: true },
           { type: "string", name: "opis", label: "Opis" },
-          { type: "string", name: "ikona", label: "Ikona (nazwa Lucide)", required: true },
+          { type: "string", name: "ikona", label: "Ikona (nazwa Lucide)" },
+          { type: "image", name: "zdjecie", label: "Zdjęcie kategorii" },
           { type: "number", name: "kolejnosc", label: "Kolejność sortowania" },
         ],
       },
@@ -49,12 +50,7 @@ export default defineConfig({
             ],
           },
           { type: "rich-text", name: "body", label: "Opis", isBody: true },
-          {
-            type: "reference",
-            name: "kategoria",
-            label: "Kategoria",
-            collections: ["category"],
-          },
+          { type: "string", name: "kategoria", label: "Kategoria (slug)" },
           { type: "number", name: "cena_doba", label: "Cena za dobę (PLN)", required: true },
           { type: "number", name: "cena_weekend", label: "Cena za weekend (PLN)", required: true },
           { type: "number", name: "cena_tydzien", label: "Cena za tydzień (PLN)", required: true },
