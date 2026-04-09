@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.2",
+    "patch-package": "^8.0.1",
     "tailwindcss": "^4.2.2"
   },
   "overrides": {
