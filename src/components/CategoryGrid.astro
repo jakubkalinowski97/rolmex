@@ -24,7 +24,10 @@ const categories = (await getCollection("category"))
             {cat.data.zdjecie ? (
               <img
                 src={cat.data.zdjecie}
-                alt={cat.data.nazwa}
+                alt=""
+                width="400"
+                height="300"
+                loading="lazy"
                 class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
               />
             ) : (

@@ -42,7 +42,7 @@ const allPosts = (await getCollection("blog"))
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       {post.data.zdjecie && (
         <div class="aspect-video rounded-2xl border border-border overflow-hidden -mt-20 lg:-mt-24 mb-6 relative z-10">
-          <img src={post.data.zdjecie} alt={post.data.tytul} class="w-full h-full object-cover" />
+          <img src={post.data.zdjecie} alt={post.data.tytul} width="960" height="540" class="w-full h-full object-cover" />
         </div>
       )}
 
@@ -83,6 +83,9 @@ const allPosts = (await getCollection("blog"))
                     <img
                       src={p.data.zdjecie}
                       alt={p.data.tytul}
+                      width="640"
+                      height="360"
+                      loading="lazy"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   ) : (

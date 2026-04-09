@@ -19,6 +19,9 @@ const { nazwa, slug, zdjecie, cena_doba, dostepny = true } = Astro.props;
       <img
         src={zdjecie}
         alt={nazwa}
+        width="400"
+        height="300"
+        loading="lazy"
         class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
       />
     ) : (

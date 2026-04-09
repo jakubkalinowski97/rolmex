@@ -38,6 +38,9 @@ const posts = (await getCollection("blog")).sort(
                   <img
                     src={post.data.zdjecie}
                     alt={post.data.tytul}
+                    width="640"
+                    height="360"
+                    loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
