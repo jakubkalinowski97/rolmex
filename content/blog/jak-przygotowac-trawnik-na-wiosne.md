@@ -1,7 +1,7 @@
 ---
 tytul: Jak przygotować trawnik na wiosnę
 slug: jak-przygotowac-trawnik-na-wiosne
-zdjecie: /images/placeholder-lawn.jpg
+zdjecie: /images/blog-trawnik.jpg
 data: 2026-03-15T00:00:00.000Z
 autor: Rolmex
 tagi:

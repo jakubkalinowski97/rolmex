@@ -1,0 +1,15 @@
+diff --git a/node_modules/@tinacms/cli/dist/index.js b/node_modules/@tinacms/cli/dist/index.js
+index 3d7f9bd..1c696e1 100644
+--- a/node_modules/@tinacms/cli/dist/index.js
++++ b/node_modules/@tinacms/cli/dist/index.js
+@@ -1591,9 +1591,7 @@ import path5 from "node:path";
+ import react from "@vitejs/plugin-react";
+ import fs4 from "fs-extra";
+ import normalizePath3 from "normalize-path";
+-import {
+-  splitVendorChunkPlugin
+-} from "vite";
++var splitVendorChunkPlugin = () => ({ name: 'split-vendor-chunk-noop' });
+ 
+ // src/next/vite/cors.ts
+ var LOCALHOST_RE = /^https?:\/\/(?:localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/;

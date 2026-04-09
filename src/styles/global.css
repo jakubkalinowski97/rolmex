@@ -2,12 +2,26 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-primary: #F97316;
-  --color-primary-dark: #EA580C;
+  --color-primary: #E86A10;
+  --color-primary-dark: #C45A0D;
+  --color-primary-light: #FFF3E8;
   --color-secondary: #16A34A;
   --color-secondary-dark: #15803D;
-  --color-bg: #F9FAFB;
-  --color-text: #1F2937;
-  --color-text-light: #6B7280;
-  --font-family-sans: 'Inter', sans-serif;
+  --color-secondary-light: #ECFDF5;
+  --color-accent: #0E7490;
+  --color-bg: #FAFAFA;
+  --color-bg-alt: #F1F5F9;
+  --color-text: #1E293B;
+  --color-text-light: #64748B;
+  --color-border: #E2E8F0;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

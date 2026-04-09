@@ -8,6 +8,7 @@ const category = defineCollection({
     slug: z.string(),
     opis: z.string().optional(),
     ikona: z.string(),
+    zdjecie: z.string().optional(),
     kolejnosc: z.number().optional(),
   }),
 });

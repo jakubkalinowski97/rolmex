@@ -10,6 +10,7 @@ const equipment = (await getCollection("equipment"))
 <section class="py-16 lg:py-24 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Najpopularniejsze</p>
       <h2 class="text-3xl lg:text-4xl font-extrabold text-text">Polecany sprzęt</h2>
       <p class="mt-4 text-text-light text-lg">Najczęściej wypożyczany przez naszych klientów</p>
     </div>
@@ -26,10 +27,10 @@ const equipment = (await getCollection("equipment"))
       ))}
     </div>
 
-    <div class="text-center mt-10">
+    <div class="text-center mt-12">
       <a
         href="/katalog"
-        class="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors"
+        class="inline-flex items-center px-7 py-3.5 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
       >
         Zobacz cały katalog
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>

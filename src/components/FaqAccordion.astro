@@ -7,27 +7,29 @@ interface Props {
 const { pytanie, index } = Astro.props;
 ---
 
-<div class="border-b border-gray-200">
+<div class="border-b border-border last:border-b-0">
   <button
-    class="faq-toggle w-full flex items-center justify-between py-5 text-left"
+    class="faq-toggle w-full flex items-center justify-between py-5 text-left gap-4 group/faq"
     aria-expanded="false"
     aria-controls={`faq-${index}`}
   >
-    <span class="font-semibold text-lg pr-4">{pytanie}</span>
-    <svg
-      class="faq-chevron w-5 h-5 shrink-0 text-text-light transition-transform duration-200"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <polyline points="6 9 12 15 18 9"></polyline>
-    </svg>
+    <span class="font-semibold text-lg text-text group-hover/faq:text-primary transition-colors">{pytanie}</span>
+    <div class="w-8 h-8 bg-bg rounded-lg flex items-center justify-center shrink-0 group-hover/faq:bg-primary/10 transition-colors">
+      <svg
+        class="faq-chevron w-4 h-4 text-text-light transition-transform duration-200"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
   </button>
-  <div id={`faq-${index}`} class="faq-content hidden pb-5 prose prose-gray max-w-none">
+  <div id={`faq-${index}`} class="faq-content hidden pb-5 prose prose-gray max-w-none text-text-light">
     <slot />
   </div>
 </div>

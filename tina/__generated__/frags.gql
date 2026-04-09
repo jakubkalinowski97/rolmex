@@ -1,0 +1,71 @@
+fragment CategoryParts on Category {
+  __typename
+  nazwa
+  slug
+  opis
+  ikona
+  kolejnosc
+}
+
+fragment EquipmentParts on Equipment {
+  __typename
+  nazwa
+  slug
+  zdjecie
+  galeria {
+    __typename
+    src
+    alt
+  }
+  body
+  kategoria {
+    ... on Category {
+      __typename
+      nazwa
+      slug
+      opis
+      ikona
+      kolejnosc
+    }
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+  }
+  cena_doba
+  cena_weekend
+  cena_tydzien
+  parametry {
+    __typename
+    nazwa
+    wartosc
+  }
+  dostepny
+  wyroziony
+}
+
+fragment BlogParts on Blog {
+  __typename
+  tytul
+  slug
+  zdjecie
+  data
+  autor
+  tagi
+  body
+}
+
+fragment FaqParts on Faq {
+  __typename
+  pytanie
+  body
+  kolejnosc
+}

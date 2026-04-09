@@ -3,46 +3,111 @@ import Layout from "../layouts/Layout.astro";
 import { company } from "../lib/company";
 ---
 
-<Layout title="O nas" description="Poznaj wypożyczalnię sprzętu ogrodowego Rolmex.">
-  <section class="py-12 lg:py-16">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl lg:text-4xl font-extrabold mb-8">O nas</h1>
+<Layout title="O nas" description="Poznaj wypozyczalnie sprzetu ogrodowego Rolmex.">
+  <!-- Page Header -->
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Poznaj nas blizej</p>
+      <h1 class="text-3xl lg:text-5xl font-extrabold">O nas</h1>
+      <p class="mt-4 text-slate-300 text-lg max-w-2xl mx-auto">Profesjonalny sprzet ogrodowy do wynajecia — z pasja i doswiadczeniem</p>
+    </div>
+  </section>
 
-      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
-        <div class="aspect-[3/1] bg-gray-200">
-          <div class="w-full h-full flex items-center justify-center text-gray-400 text-lg">
-            Zdjęcie wypożyczalni
+  <section class="py-12 lg:py-20 bg-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Intro -->
+      <div class="bg-white rounded-2xl border border-border p-8 lg:p-12 mb-8">
+        <p class="text-lg lg:text-xl text-text-light leading-relaxed">
+          <strong class="text-text">{company.pelna_nazwa}</strong> to firma z wieloletnim doswiadczeniem w branzy ogrodniczej.
+          Oferujemy profesjonalny sprzet ogrodowy do wynajecia dla klientow indywidualnych i firm.
+        </p>
+      </div>
+
+      <!-- Mission -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div class="bg-white rounded-2xl border border-border p-8">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h2 class="text-xl font-bold text-text mb-3">Nasza misja</h2>
+          <p class="text-text-light leading-relaxed">
+            Wierzymy, ze kazdy zasluguje na dostep do profesjonalnego sprzetu ogrodowego bez koniecznosci
+            jego zakupu. Dlatego oferujemy szeroki wybor maszyn i narzedzi w atrakcyjnych cenach,
+            z gwarancja sprawnosci i fachowym doradztwem.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-border p-8">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h2 class="text-xl font-bold text-text mb-3">Nasz sprzet</h2>
+          <p class="text-text-light leading-relaxed">
+            Dysponujemy szeroka gama sprzetu ogrodowego renomowanych producentow: STIHL
+            i wielu innych. Kazde urzadzenie jest regularnie serwisowane
+            i sprawdzane przed kazdym wypozyczeniem.
+          </p>
+        </div>
+      </div>
+
+      <!-- Why rent -->
+      <div class="bg-white rounded-2xl border border-border p-8 lg:p-12">
+        <h2 class="text-2xl font-bold text-text mb-8 text-center">Dlaczego warto wypozyczac?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-text">Oszczedzasz pieniadze</p>
+              <p class="text-text-light text-sm mt-1">Placisz tylko za czas, kiedy uzywasz sprzetu</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-text">Bez trosk o serwis</p>
+              <p class="text-text-light text-sm mt-1">Nie martwisz sie o konserwacje i naprawy</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-text">Profesjonalny sprzet</p>
+              <p class="text-text-light text-sm mt-1">Dostep do maszyn znanych marek bez zakupu</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-text">Testuj przed zakupem</p>
+              <p class="text-text-light text-sm mt-1">Sprawdz sprzet w dzialaniu zanim zdecydujesz sie na kupno</p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="p-6 lg:p-10 prose prose-gray prose-lg max-w-none">
-          <p>
-            <strong>{company.pelna_nazwa}</strong> to firma z wieloletnim doświadczeniem w branży ogrodniczej.
-            Oferujemy profesjonalny sprzęt ogrodowy do wynajęcia dla klientów indywidualnych i firm.
-          </p>
-
-          <h2>Nasza misja</h2>
-          <p>
-            Wierzymy, że każdy zasługuje na dostęp do profesjonalnego sprzętu ogrodowego bez konieczności
-            jego zakupu. Dlatego oferujemy szeroki wybór maszyn i narzędzi w atrakcyjnych cenach,
-            z gwarancją sprawności i fachowym doradztwem.
-          </p>
-
-          <h2>Dlaczego warto wypożyczać?</h2>
-          <ul>
-            <li>Oszczędzasz pieniądze — płacisz tylko za czas, kiedy używasz sprzętu</li>
-            <li>Nie martwisz się o serwis i konserwację</li>
-            <li>Masz dostęp do profesjonalnych maszyn znanych marek</li>
-            <li>Możesz przetestować sprzęt przed ewentualnym zakupem</li>
-          </ul>
-
-          <h2>Nasz sprzęt</h2>
-          <p>
-            Dysponujemy szeroką gamą sprzętu ogrodowego renomowanych producentów: Honda, STIHL,
-            Husqvarna, Makita i wielu innych. Każde urządzenie jest regularnie serwisowane
-            i sprawdzane przed każdym wypożyczeniem.
-          </p>
+      <!-- Company details -->
+      <div class="mt-8 bg-white rounded-2xl border border-border p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <p class="text-sm text-text-light">Dane firmy</p>
+          <p class="font-semibold text-text">{company.pelna_nazwa}</p>
+          <p class="text-text-light text-sm mt-1">{company.adres.ulica}, {company.adres.kod} {company.adres.miasto}</p>
+          <p class="text-text-light text-sm">NIP: {company.nip} | REGON: {company.regon}</p>
         </div>
+        <a
+          href="/kontakt"
+          class="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition-colors shrink-0"
+        >
+          Skontaktuj sie
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
   </section>

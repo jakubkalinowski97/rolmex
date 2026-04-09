@@ -1,7 +1,7 @@
 ---
 tytul: Bezpieczeństwo przy pracy z piłą łańcuchową
 slug: bezpieczenstwo-przy-pracy-z-pila-lancuchowa
-zdjecie: /images/placeholder-safety.jpg
+zdjecie: /images/blog-pila.jpg
 data: 2026-02-20T00:00:00.000Z
 autor: Rolmex
 tagi:

@@ -1,42 +1,43 @@
 ---
 const reasons = [
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>`,
     title: "Szybko i wygodnie",
     desc: "Odbierz sprzęt tego samego dnia. Bez zbędnych formalności.",
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>`,
     title: "Profesjonalny sprzęt",
     desc: "Regularnie serwisowane maszyny renomowanych marek.",
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>`,
     title: "Atrakcyjne ceny",
     desc: "Konkurencyjne stawki dobowe, weekendowe i tygodniowe.",
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>`,
     title: "Fachowe doradztwo",
     desc: "Pomożemy dobrać sprzęt do Twoich potrzeb i doradzimy w obsłudze.",
   },
 ];
 ---
 
-<section class="py-16 lg:py-24">
+<section class="py-16 lg:py-24 bg-bg-alt">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
+    <div class="text-center mb-14">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Dlaczego Rolmex</p>
       <h2 class="text-3xl lg:text-4xl font-extrabold text-text">Dlaczego my?</h2>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
       {reasons.map((r) => (
-        <div class="text-center">
-          <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl text-primary mb-4">
+        <div class="bg-white rounded-2xl p-7 border border-border text-center hover:shadow-md transition-shadow">
+          <div class="inline-flex items-center justify-center w-14 h-14 bg-primary-light rounded-xl text-primary mb-5">
             <Fragment set:html={r.icon} />
           </div>
-          <h3 class="text-lg font-bold mb-2">{r.title}</h3>
-          <p class="text-text-light">{r.desc}</p>
+          <h3 class="text-lg font-bold mb-2 text-text">{r.title}</h3>
+          <p class="text-text-light text-sm leading-relaxed">{r.desc}</p>
         </div>
       ))}
     </div>

@@ -1,11 +1,13 @@
 export const company = {
   nazwa: "Rolmex",
-  pelna_nazwa: "Rolmex - Wypożyczalnia Sprzętu Ogrodowego",
+  pelna_nazwa: "\"Rol-Mex\" s.c. Bartłomiej Modzelewski, Kamil Kalinowski",
   adres: {
-    ulica: "ul. Ogrodowa 15",
-    miasto: "Warszawa",
-    kod: "00-001",
+    ulica: "ul. Rynek 1A",
+    miasto: "Rutki-Kossaki",
+    kod: "18-312",
   },
+  nip: "7230002213",
+  regon: "450012598",
   telefon: "+48 123 456 789",
   telefonLink: "tel:+48123456789",
   email: "kontakt@rolmex.pl",

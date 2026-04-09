@@ -7,44 +7,62 @@ const posts = (await getCollection("blog")).sort(
 );
 ---
 
-<Layout title="Blog" description="Porady i artykuły o pielęgnacji ogrodu i sprzęcie ogrodowym.">
-  <section class="py-12 lg:py-16">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl lg:text-4xl font-extrabold mb-8">Blog</h1>
+<Layout title="Blog" description="Porady i artykuly o pielegnacji ogrodu i sprzecie ogrodowym.">
+  <!-- Page Header -->
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Blog</p>
+      <h1 class="text-3xl lg:text-5xl font-extrabold">Porady i artykuly</h1>
+      <p class="mt-4 text-slate-300 text-lg max-w-2xl mx-auto">Praktyczna wiedza o sprzecie ogrodowym i pielegnacji ogrodu</p>
+    </div>
+  </section>
 
-      <div class="space-y-8">
-        {posts.map((post) => (
-          <a
-            href={`/blog/${post.data.slug}`}
-            class="group flex flex-col sm:flex-row gap-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 overflow-hidden"
-          >
-            <div class="sm:w-64 shrink-0 aspect-video sm:aspect-auto bg-gray-100 overflow-hidden">
-              {post.data.zdjecie ? (
-                <img
-                  src={post.data.zdjecie}
-                  alt={post.data.tytul}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              ) : (
-                <div class="w-full h-full flex items-center justify-center text-gray-400 min-h-[160px]">Blog</div>
-              )}
-            </div>
-            <div class="p-5 sm:py-6">
-              <time class="text-sm text-text-light">
-                {new Date(post.data.data).toLocaleDateString("pl-PL", { year: "numeric", month: "long", day: "numeric" })}
-              </time>
-              <h2 class="mt-2 text-xl font-bold group-hover:text-primary transition-colors">{post.data.tytul}</h2>
-              {post.data.tagi && (
-                <div class="mt-3 flex flex-wrap gap-2">
-                  {post.data.tagi.map((tag: string) => (
-                    <span class="text-xs bg-bg px-2 py-1 rounded-full text-text-light">{tag}</span>
-                  ))}
-                </div>
-              )}
-            </div>
-          </a>
-        ))}
-      </div>
+  <section class="py-12 lg:py-20 bg-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {posts.length === 0 ? (
+        <div class="text-center py-16">
+          <div class="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          </div>
+          <p class="text-text-light text-lg">Wkrotce pojawia sie nowe artykuly!</p>
+        </div>
+      ) : (
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {posts.map((post) => (
+            <a
+              href={`/blog/${post.data.slug}`}
+              class="group bg-white rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 overflow-hidden flex flex-col"
+            >
+              <div class="aspect-[16/9] bg-slate-50 overflow-hidden">
+                {post.data.zdjecie ? (
+                  <img
+                    src={post.data.zdjecie}
+                    alt={post.data.tytul}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div class="w-full h-full flex items-center justify-center text-slate-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                  </div>
+                )}
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <time class="text-sm text-text-light">
+                  {new Date(post.data.data).toLocaleDateString("pl-PL", { year: "numeric", month: "long", day: "numeric" })}
+                </time>
+                <h2 class="mt-2 text-lg font-bold group-hover:text-primary transition-colors">{post.data.tytul}</h2>
+                {post.data.tagi && (
+                  <div class="mt-auto pt-4 flex flex-wrap gap-2">
+                    {post.data.tagi.map((tag: string) => (
+                      <span class="text-xs bg-bg px-2.5 py-1 rounded-full text-text-light font-medium">{tag}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   </section>
 </Layout>
