@@ -55,26 +55,58 @@ import { company, navLinks } from "../lib/company";
       </div>
     </div>
 
-    <!-- Mobile Nav -->
-    <nav id="mobile-menu" class="lg:hidden hidden border-t border-border pb-4 pt-2">
-      <div class="flex flex-col gap-1">
-        {navLinks.map((link) => (
-          <a
-            href={link.href}
-            class="px-3 py-2.5 text-text-light hover:text-primary hover:bg-primary-light font-medium rounded-lg transition-all"
-          >
-            {link.label}
-          </a>
-        ))}
-      </div>
-    </nav>
   </div>
 </header>
+
+<!-- Mobile Nav Overlay -->
+<div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden" aria-hidden="true"></div>
+<nav id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-white z-50 translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+  <div class="flex items-center justify-between px-5 h-16 border-b border-border">
+    <span class="font-bold text-lg text-text">Menu</span>
+    <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-100 transition-colors" aria-label="Zamknij menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+  <div class="flex flex-col p-4 gap-1">
+    {navLinks.map((link) => (
+      <a
+        href={link.href}
+        class="px-4 py-3 text-text hover:text-primary hover:bg-primary/5 font-medium rounded-xl transition-colors"
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-border">
+    <a
+      href={company.telefonLink}
+      class="flex items-center justify-center gap-2 w-full bg-primary text-white font-semibold py-3 rounded-xl hover:bg-primary-dark transition-colors duration-200"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      {company.telefon}
+    </a>
+  </div>
+</nav>
 
 <script>
   const btn = document.getElementById("mobile-menu-btn");
   const menu = document.getElementById("mobile-menu");
-  btn?.addEventListener("click", () => {
-    menu?.classList.toggle("hidden");
-  });
+  const overlay = document.getElementById("mobile-overlay");
+  const closeBtn = document.getElementById("mobile-menu-close");
+
+  function openMenu() {
+    menu?.classList.remove("translate-x-full");
+    overlay?.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeMenu() {
+    menu?.classList.add("translate-x-full");
+    overlay?.classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+
+  btn?.addEventListener("click", openMenu);
+  closeBtn?.addEventListener("click", closeMenu);
+  overlay?.addEventListener("click", closeMenu);
 </script>

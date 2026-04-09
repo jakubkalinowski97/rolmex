@@ -5,9 +5,9 @@ import { company } from "../lib/company";
 <section class="relative bg-slate-900 text-white overflow-hidden">
   <!-- Right-side hero image with smooth gradient fade -->
   <div class="absolute inset-0">
-    <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-[position:right_center] [mask-image:linear-gradient(to_right,transparent_40%,rgba(0,0,0,0.33)_55%,rgba(0,0,0,0.66)_75%,black_100%)]"></div>
+    <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center sm:bg-[position:right_center] [mask-image:linear-gradient(to_top,transparent_5%,rgba(0,0,0,0.4)_30%,rgba(0,0,0,0.6)_50%,rgba(0,0,0,0.3)_100%)] sm:[mask-image:linear-gradient(to_right,transparent_40%,rgba(0,0,0,0.33)_55%,rgba(0,0,0,0.66)_75%,black_100%)]"></div>
     <!-- Top/bottom vignette -->
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-transparent to-slate-900/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/30 to-slate-900/70 sm:from-slate-900/40 sm:via-transparent sm:to-slate-900/50"></div>
   </div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
@@ -44,7 +44,7 @@ import { company } from "../lib/company";
       </div>
 
       <!-- Trust indicators -->
-      <div class="mt-12 flex flex-wrap items-center gap-6 text-sm text-slate-400">
+      <div class="mt-12 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 sm:gap-6 text-sm text-slate-400">
         <div class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
           Odbiór tego samego dnia

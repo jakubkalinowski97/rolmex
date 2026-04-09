@@ -25,20 +25,60 @@ const equipment = (await getCollection("equipment")).filter(
 ---
 
 <Layout title={category.data.nazwa} description={category.data.opis}>
-  <section class="py-12 lg:py-16">
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl lg:text-4xl font-extrabold mb-2">{category.data.nazwa}</h1>
-      {category.data.opis && <p class="text-text-light text-lg mb-8">{category.data.opis}</p>}
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Katalog</p>
+      <h1 class="text-3xl lg:text-5xl font-extrabold">{category.data.nazwa}</h1>
+      {category.data.opis && <p class="mt-3 text-slate-300 text-lg">{category.data.opis}</p>}
+    </div>
+  </section>
 
+  <section class="py-10 lg:py-16 bg-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col lg:flex-row gap-8">
-        <!-- Sidebar -->
-        <aside class="lg:w-64 shrink-0">
+        <!-- Mobile: Category Dropdown -->
+        <div class="lg:hidden" id="category-dropdown">
+          <button
+            id="dropdown-trigger"
+            class="w-full flex items-center justify-between px-4 py-3 bg-white border border-border rounded-xl text-text font-medium"
+            type="button"
+          >
+            <span id="dropdown-label">{category.data.nazwa}</span>
+            <svg class="w-5 h-5 text-text-light transition-transform duration-200" id="dropdown-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="dropdown-menu" class="hidden mt-2 bg-white border border-border rounded-xl overflow-hidden">
+            <a href="/katalog" class="flex items-center gap-3 px-4 py-3 text-sm text-text hover:bg-slate-50 transition-colors border-b border-border">
+              <span class="w-1.5 h-1.5 rounded-full bg-border"></span>
+              Wszystkie kategorie
+            </a>
+            {categories.map((cat) => (
+              <a
+                href={`/katalog/kategoria/${cat.data.slug}`}
+                class:list={[
+                  "flex items-center gap-3 px-4 py-3 text-sm transition-colors border-b border-border last:border-b-0",
+                  cat.data.slug === category.data.slug
+                    ? "font-medium bg-primary/10 text-primary"
+                    : "text-text hover:bg-slate-50",
+                ]}
+              >
+                <span class:list={[
+                  "w-1.5 h-1.5 rounded-full",
+                  cat.data.slug === category.data.slug ? "bg-primary" : "bg-border"
+                ]}></span>
+                {cat.data.nazwa}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Desktop: Sidebar -->
+        <aside class="hidden lg:block lg:w-56 shrink-0">
           <h2 class="font-bold text-lg mb-4">Kategorie</h2>
-          <ul class="space-y-2">
+          <ul class="space-y-1">
             <li>
               <a
                 href="/katalog"
-                class="block px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors text-text"
+                class="block px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors text-text text-sm"
               >
                 Wszystkie
               </a>
@@ -48,10 +88,10 @@ const equipment = (await getCollection("equipment")).filter(
                 <a
                   href={`/katalog/kategoria/${cat.data.slug}`}
                   class:list={[
-                    "block px-3 py-2 rounded-lg transition-colors",
+                    "block px-3 py-2 rounded-lg transition-colors text-sm",
                     cat.data.slug === category.data.slug
                       ? "bg-primary text-white font-medium"
-                      : "hover:bg-gray-100 text-text",
+                      : "hover:bg-slate-100 text-text",
                   ]}
                 >
                   {cat.data.nazwa}
@@ -63,9 +103,8 @@ const equipment = (await getCollection("equipment")).filter(
 
         <!-- Equipment Grid -->
         <div class="flex-1">
-          <p class="text-text-light mb-6">{equipment.length} produktów</p>
           {equipment.length > 0 ? (
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               {equipment.map((item) => (
                 <EquipmentCard
                   nazwa={item.data.nazwa}
@@ -77,10 +116,33 @@ const equipment = (await getCollection("equipment")).filter(
               ))}
             </div>
           ) : (
-            <p class="text-text-light">Brak sprzętu w tej kategorii.</p>
+            <div class="text-center py-16">
+              <p class="text-text-light text-lg">Brak sprzętu w tej kategorii.</p>
+              <a href="/katalog" class="mt-4 inline-flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors">
+                Zobacz wszystkie produkty
+              </a>
+            </div>
           )}
         </div>
       </div>
     </div>
   </section>
 </Layout>
+
+<script>
+  const trigger = document.getElementById('dropdown-trigger');
+  const menu = document.getElementById('dropdown-menu');
+  const chevron = document.getElementById('dropdown-chevron');
+
+  trigger?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+    chevron?.classList.toggle('rotate-180');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!(e.target as Element)?.closest('#category-dropdown')) {
+      menu?.classList.add('hidden');
+      chevron?.classList.remove('rotate-180');
+    }
+  });
+</script>
