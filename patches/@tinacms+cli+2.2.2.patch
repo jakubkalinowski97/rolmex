@@ -1,5 +1,5 @@
 diff --git a/node_modules/@tinacms/cli/dist/index.js b/node_modules/@tinacms/cli/dist/index.js
-index 3d7f9bd..77051cc 100644
+index 3d7f9bd..aa32517 100644
 --- a/node_modules/@tinacms/cli/dist/index.js
 +++ b/node_modules/@tinacms/cli/dist/index.js
 @@ -1560,13 +1560,13 @@ var devHTML = (port) => `<!DOCTYPE html>
@@ -38,3 +38,30 @@ index 3d7f9bd..77051cc 100644
  
  // src/next/vite/cors.ts
  var LOCALHOST_RE = /^https?:\/\/(?:localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/;
+@@ -2051,7 +2049,7 @@ var createConfig = async ({
+        * `process.env` with `{}` are problematic, because browsers don't understand the `{}.` syntax,
+        * but node does. This was a surprise, but using `new Object()` seems to do the trick.
+        */
+-      "process.env": `new Object(${JSON.stringify(publicEnv)})`,
++      "process.env": JSON.stringify(publicEnv),
+       // Used by picomatch https://github.com/micromatch/picomatch/blob/master/lib/utils.js#L4
+       "process.platform": `"${process.platform}"`,
+       __API_URL__: `"${apiURL}"`,
+@@ -2095,10 +2093,17 @@ var createConfig = async ({
+         ]
+       }
+     },
++    optimizeDeps: {
++      include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime']
++    },
+     build: {
+       sourcemap: false,
+       outDir: configManager.outputFolderPath,
+       emptyOutDir: true,
++      commonjsOptions: {
++        include: [/react/, /react-dom/, /node_modules/],
++        transformMixedEsModules: true
++      },
+       rollupOptions
+     },
+     plugins: [
