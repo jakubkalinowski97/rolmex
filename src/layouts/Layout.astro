@@ -7,9 +7,12 @@ import { company } from "../lib/company";
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
 }
 
-const { title, description = `${company.pelna_nazwa} — wynajem kosiarek, pilarek, glebogryzarek i innego sprzętu ogrodowego.` } = Astro.props;
+const { title, description = `${company.pelna_nazwa} — wynajem kosiarek, pilarek, glebogryzarek i innego sprzętu ogrodowego.`, ogImage = "/images/hero.jpg" } = Astro.props;
+const fullTitle = `${title} | ${company.nazwa}`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -18,13 +21,30 @@ const { title, description = `${company.pelna_nazwa} — wynajem kosiarek, pilar
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalURL.href} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content={company.nazwa} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
     <link rel="preload" as="image" href="/images/hero.jpg" fetchpriority="high" />
-    <title>{title} | {company.nazwa}</title>
+    <title>{fullTitle}</title>
   </head>
   <body class="bg-bg text-text font-sans min-h-screen flex flex-col">
     <Header />

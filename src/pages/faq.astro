@@ -9,13 +9,13 @@ const faqs = (await getCollection("faq")).sort(
 );
 ---
 
-<Layout title="Najczestsze pytania" description="Odpowiedzi na najczestsze pytania dotyczace wypozyczalni sprzetu ogrodowego.">
+<Layout title="Najczęstsze pytania" description="Odpowiedzi na najczęstsze pytania dotyczące wypożyczalni sprzętu ogrodowego.">
   <!-- Page Header -->
   <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">FAQ</p>
-      <h1 class="text-3xl lg:text-5xl font-extrabold">Najczestsze pytania</h1>
-      <p class="mt-4 text-slate-300 text-lg max-w-2xl mx-auto">Znajdz odpowiedzi na najczesciej zadawane pytania o wypozyczalnie</p>
+      <h1 class="text-3xl lg:text-5xl font-extrabold">Najczęstsze pytania</h1>
+      <p class="mt-4 text-slate-300 text-lg max-w-2xl mx-auto">Znajdź odpowiedzi na najczęściej zadawane pytania o wypożyczalnię</p>
     </div>
   </section>
 
@@ -34,15 +34,15 @@ const faqs = (await getCollection("faq")).sort(
 
       <!-- CTA -->
       <div class="mt-10 text-center bg-white rounded-2xl border border-border p-8">
-        <h3 class="text-xl font-bold text-text mb-2">Nie znalazles odpowiedzi?</h3>
-        <p class="text-text-light mb-6">Skontaktuj sie z nami — chetnie pomozemy!</p>
+        <h3 class="text-xl font-bold text-text mb-2">Nie znalazłeś odpowiedzi?</h3>
+        <p class="text-text-light mb-6">Skontaktuj się z nami — chętnie pomożemy!</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href={company.telefonLink}
             class="inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            Zadzwon
+            Zadzwoń
           </a>
           <a
             href="/kontakt"

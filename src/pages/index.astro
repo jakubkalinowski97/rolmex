@@ -5,9 +5,44 @@ import CategoryGrid from "../components/CategoryGrid.astro";
 import FeaturedEquipment from "../components/FeaturedEquipment.astro";
 import WhyUs from "../components/WhyUs.astro";
 import LatestPosts from "../components/LatestPosts.astro";
+import { company } from "../lib/company";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": company.nazwa,
+  "legalName": company.pelna_nazwa,
+  "description": "Profesjonalna wypożyczalnia sprzętu ogrodowego — kosiarki, piły, glebogryzarki i wiele więcej.",
+  "url": "https://rolmex.pl",
+  "telephone": company.telefon,
+  "email": company.email,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": company.adres.ulica,
+    "addressLocality": company.adres.miasto,
+    "postalCode": company.adres.kod,
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "priceRange": "$$"
+};
 ---
 
 <Layout title="Strona główna">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <HeroSection />
   <CategoryGrid />
   <FeaturedEquipment />
