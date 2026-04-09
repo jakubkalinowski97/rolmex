@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "tinacms build -c \"astro build\"",
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "build": "node scripts/optimize-images.mjs && tinacms build -c \"astro build\"",
     "preview": "astro preview",
     "astro": "astro",
     "postinstall": "patch-package"
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.2",
     "patch-package": "^8.0.1",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.2.2"
   },
   "overrides": {
