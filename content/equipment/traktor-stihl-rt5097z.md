@@ -3,16 +3,16 @@ nazwa: Traktor ogrodowy STIHL RT 5097Z
 slug: traktor-stihl-rt5097z
 zdjecie: /images/stihl-rt5097z.jpg
 kategoria: content/categories/traktory-ogrodowe.md
-cena_doba: 250
-cena_weekend: 380
-cena_tydzien: 1000
+cena_doba: 400
+cena_weekend: 650
+cena_tydzien: 1500
 parametry:
   - nazwa: Silnik
-    wartosc: STIHL EVC 7000, dwucylindrowy
+    wartosc: 'STIHL EVC 7000, dwucylindrowy'
   - nazwa: Pojemność skokowa
     wartosc: 635 cm³
   - nazwa: Moc
-    wartosc: 12,2 kW (16,6 KM)
+    wartosc: '12,2 kW (16,6 KM)'
   - nazwa: Szerokość koszenia
     wartosc: 95 cm
   - nazwa: Wysokość koszenia
