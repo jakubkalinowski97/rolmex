@@ -3,10 +3,9 @@ nazwa: Podkrzesywarka spalinowa STIHL HT 105
 slug: podkrzesywarka-stihl-ht105
 zdjecie: /images/stihl-ht105.jpg
 kategoria: content/categories/podkrzesywarki.md
-cena_doba: 150
-cena_weekend: 300
-cena_tydzien: 650
-kaucja: 600
+cena_doba: 190
+cena_weekend: 330
+cena_tydzien: 850
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 4-MIX (czterosuw)
