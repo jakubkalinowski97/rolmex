@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://rolmex.pl',
+  site: 'https://wypozyczalniarutki.pl',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],
