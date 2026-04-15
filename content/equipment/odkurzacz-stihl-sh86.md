@@ -24,7 +24,7 @@ parametry:
   - nazwa: Stopień rozdrabniania
     wartosc: 'do 1:14'
 dostepny: true
-wyroziony: true
+wyroziony: false
 ---
 
 Wszechstronne urządzenie STIHL SH 86 typu odkurzacz–rozdrabniacz i dmuchawa, do zbierania oraz usuwania liści i drobnych odpadów zielonych. Możliwość szybkiej zmiany trybu z odkurzacza na dmuchawę. Miękkie uchwyty i system antywibracyjny.
