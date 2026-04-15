@@ -8,7 +8,7 @@ kategoria: content/categories/dmuchawy.md
 cena_doba: 120
 cena_weekend: 200
 cena_tydzien: 550
-kaucja: 500
+kaucja: 300
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 2-MIX
