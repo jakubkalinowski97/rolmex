@@ -3,16 +3,16 @@ nazwa: Świder glebowy STIHL BT 131
 slug: swider-stihl-bt131
 zdjecie: /images/stihl-bt131.jpg
 kategoria: content/categories/swidry-glebowe.md
-cena_doba: 100
-cena_weekend: 150
-cena_tydzien: 420
+cena_doba: 200
+cena_weekend: 320
+cena_tydzien: 900
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 4-MIX
   - nazwa: Pojemność skokowa
-    wartosc: 36,3 cm³
+    wartosc: '36,3 cm³'
   - nazwa: Moc
-    wartosc: 1,4 kW (1,9 KM)
+    wartosc: '1,4 kW (1,9 KM)'
   - nazwa: Masa
     wartosc: 10 kg
   - nazwa: Maks. średnica wiertła
