@@ -9,7 +9,6 @@ cena_tydzien: 450
 parametry:
   - nazwa: Moc
     wartosc: 0.90 kW
-  - {}
 dostepny: true
 wyroziony: true
 ---
