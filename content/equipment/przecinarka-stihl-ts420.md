@@ -7,9 +7,9 @@ cena_doba: 200
 cena_weekend: 350
 cena_tydzien: 900
 kaucja: 800
-dodatkowe_info: >-
-  Do kosztu wynajmu doliczana jest dodatkowa opłata za zużycie tarczy – naliczana
-  proporcjonalnie do jej faktycznego zużycia podczas pracy.
+dodatkowe_info: |-
+  Do kosztu wynajmu doliczana jest dodatkowa opłata za zużycie tarczy – naliczana 70zł za 1mm
+  TARCZA DIAMENTOWA (350mm) 
 parametry:
   - nazwa: Pojemność skokowa
     wartosc: '66,7 cm³'
