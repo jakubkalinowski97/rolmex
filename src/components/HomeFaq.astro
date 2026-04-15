@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from "astro:content";
+import FaqAccordion from "./FaqAccordion.astro";
+
+const faqs = (await getCollection("faq"))
+  .sort((a, b) => (a.data.kolejnosc ?? 99) - (b.data.kolejnosc ?? 99))
+  .slice(0, 5);
+---
+
+<section class="py-16 lg:py-24 bg-bg">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">FAQ</p>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-text">Najczęstsze pytania</h2>
+      <p class="mt-4 text-text-light text-lg">Krótkie odpowiedzi na to, o co pytacie najczęściej</p>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-border p-6 lg:p-10">
+      {faqs.map(async (faq, i) => {
+        const { Content } = await render(faq);
+        return (
+          <FaqAccordion pytanie={faq.data.pytanie} index={i}>
+            <Content />
+          </FaqAccordion>
+        );
+      })}
+    </div>
+
+    <div class="mt-8 text-center">
+      <a
+        href="/faq"
+        class="inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition-colors"
+      >
+        Zobacz wszystkie pytania
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+</section>

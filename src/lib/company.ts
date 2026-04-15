@@ -17,10 +17,10 @@ export const company = {
     niedziela: "Nieczynne",
   },
   mapa: {
-    lat: 52.2297,
-    lng: 21.0122,
+    lat: 53.0864,
+    lng: 22.4574,
     embedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.8!2d21.012!3d52.229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDEzJzQ3LjAiTiAyMcKwMDAnNDMuOSJF!5e0!3m2!1spl!2spl!4v1",
+      "https://maps.google.com/maps?q=ul.%20Rynek%201A%2C%2018-312%20Rutki-Kossaki&hl=pl&z=16&output=embed",
   },
   social: {
     facebook: "https://facebook.com/rolmex",
