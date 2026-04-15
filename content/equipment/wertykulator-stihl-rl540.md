@@ -6,6 +6,7 @@ kategoria: content/categories/wertykulatory.md
 cena_doba: 190
 cena_weekend: 300
 cena_tydzien: 750
+kaucja: 350
 parametry:
   - nazwa: Silnik
     wartosc: HD675 OHV
