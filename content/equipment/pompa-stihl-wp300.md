@@ -6,6 +6,7 @@ kategoria: content/categories/pompy-wodne.md
 cena_doba: 100
 cena_weekend: 160
 cena_tydzien: 450
+kaucja: 300
 parametry:
   - nazwa: Maks. wydajność przepływu
     wartosc: 616 l/min
