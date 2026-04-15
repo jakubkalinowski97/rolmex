@@ -20,7 +20,7 @@ parametry:
   - nazwa: Wąż wysokociśnieniowy
     wartosc: '15 m, na bębnie'
 dostepny: true
-wyroziony: false
+wyroziony: true
 ---
 
 Bardzo wydajna, profesjonalna myjka wysokociśnieniowa STIHL RE 282 Plus do intensywnego użytkowania w gospodarstwach, firmach usługowych i jednostkach samorządowych. Niskoobrotowy silnik i mosiężna pompa zwiększające trwałość. Zintegrowany zbiornik na środek czyszczący, regulacja ciśnienia/przepływu, manometr.
