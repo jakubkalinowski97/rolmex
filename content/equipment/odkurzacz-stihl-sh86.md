@@ -6,9 +6,9 @@ galeria:
   - src: /images/stihl-sh86-2.jpg
   - src: /images/stihl-sh86-2.jpg
 kategoria: content/categories/dmuchawy.md
-cena_doba: 70
-cena_weekend: 100
-cena_tydzien: 300
+cena_doba: 120
+cena_weekend: 200
+cena_tydzien: 550
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 2-MIX
