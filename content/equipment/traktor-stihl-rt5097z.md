@@ -6,6 +6,7 @@ kategoria: content/categories/traktory-ogrodowe.md
 cena_doba: 350
 cena_weekend: 590
 cena_tydzien: 1500
+kaucja: 2000
 parametry:
   - nazwa: Silnik
     wartosc: 'STIHL EVC 7000, dwucylindrowy'

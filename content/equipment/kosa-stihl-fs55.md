@@ -6,6 +6,7 @@ kategoria: content/categories/kosy-spalinowe.md
 cena_doba: 100
 cena_weekend: 160
 cena_tydzien: 450
+kaucja: 400
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 2-MIX

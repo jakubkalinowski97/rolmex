@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getEntry, render } from "astro:content";
+
+const page = await getEntry("pages", "regulamin");
+if (!page) throw new Error("Brak pliku content/pages/regulamin.md");
+const { Content } = await render(page);
+---
+
+<Layout title={page.data.tytul} description={page.data.opis ?? page.data.tytul}>
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Dokumenty</p>
+      <h1 class="text-3xl lg:text-5xl font-extrabold">{page.data.tytul}</h1>
+      {page.data.aktualizacja && (
+        <p class="mt-4 text-slate-400 text-sm">
+          Ostatnia aktualizacja: {new Date(page.data.aktualizacja).toLocaleDateString("pl-PL", { year: "numeric", month: "long", day: "numeric" })}
+        </p>
+      )}
+    </div>
+  </section>
+
+  <section class="py-10 lg:py-14 bg-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-2xl border border-border p-6 lg:p-10">
+        <div class="prose prose-gray max-w-none prose-headings:text-text prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+          <Content />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

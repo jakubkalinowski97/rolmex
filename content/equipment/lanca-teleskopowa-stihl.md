@@ -6,6 +6,7 @@ kategoria: content/categories/akcesoria.md
 cena_doba: 80
 cena_weekend: 130
 cena_tydzien: 350
+kaucja: 300
 parametry:
   - nazwa: Długość
     wartosc: '1,57–4,0 m (regulowana)'

@@ -6,6 +6,7 @@ kategoria: content/categories/akcesoria.md
 cena_doba: 50
 cena_weekend: 100
 cena_tydzien: 250
+kaucja: 200
 parametry:
   - nazwa: Średnica tarczy roboczej
     wartosc: 310 mm

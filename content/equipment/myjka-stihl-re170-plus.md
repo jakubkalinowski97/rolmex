@@ -6,6 +6,7 @@ kategoria: content/categories/myjki-cisnieniowe.md
 cena_doba: 150
 cena_weekend: 250
 cena_tydzien: 650
+kaucja: 500
 parametry:
   - nazwa: Napięcie
     wartosc: '230 V, 1-fazowa'

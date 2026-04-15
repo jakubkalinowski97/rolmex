@@ -6,6 +6,7 @@ kategoria: content/categories/glebogryzarki.md
 cena_doba: 180
 cena_weekend: 300
 cena_tydzien: 800
+kaucja: 800
 parametry:
   - nazwa: Silnik
     wartosc: Kohler XT800 OHV

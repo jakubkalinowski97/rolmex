@@ -1,19 +1,19 @@
 export const company = {
   nazwa: "Rolmex",
-  pelna_nazwa: "\"Rol-Mex\" s.c. Bartłomiej Modzelewski, Kamil Kalinowski",
+  pelna_nazwa: "ROL-MEX s.c. Bartłomiej Modzelewski, Kamil Kalinowski",
   adres: {
     ulica: "ul. Rynek 1A",
     miasto: "Rutki-Kossaki",
     kod: "18-312",
   },
-  nip: "7230002213",
+  nip: "723-000-22-13",
   regon: "450012598",
-  telefon: "+48 123 456 789",
-  telefonLink: "tel:+48123456789",
-  email: "kontakt@rolmex.pl",
+  telefon: "+48 500 217 501",
+  telefonLink: "tel:+48500217501",
+  email: "rolmexrutki@wp.pl",
   godziny: {
-    pn_pt: "8:00 - 18:00",
-    sobota: "9:00 - 14:00",
+    pn_pt: "7:00 - 16:00",
+    sobota: "7:00 - 14:00",
     niedziela: "Nieczynne",
   },
   mapa: {

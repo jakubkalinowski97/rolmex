@@ -6,6 +6,7 @@ kategoria: content/categories/akcesoria.md
 cena_doba: 50
 cena_weekend: 80
 cena_tydzien: 230
+kaucja: 200
 parametry:
   - nazwa: Kompatybilność
     wartosc: 'STIHL RE 361, RE 461, RE 232, RE 282 Plus, RE 362, RE 462'

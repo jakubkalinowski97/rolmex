@@ -6,6 +6,7 @@ kategoria: content/categories/opryskiwacze.md
 cena_doba: 150
 cena_weekend: 250
 cena_tydzien: 700
+kaucja: 600
 parametry:
   - nazwa: Pojemność zbiornika
     wartosc: 14 l

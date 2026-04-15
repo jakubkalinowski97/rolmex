@@ -54,6 +54,13 @@ export default defineConfig({
           { type: "number", name: "cena_doba", label: "Cena za dobę (PLN)", required: true },
           { type: "number", name: "cena_weekend", label: "Cena za weekend (PLN)", required: true },
           { type: "number", name: "cena_tydzien", label: "Cena za tydzień (PLN)", required: true },
+          { type: "number", name: "kaucja", label: "Kaucja (PLN)" },
+          {
+            type: "string",
+            name: "dodatkowe_info",
+            label: "Dodatkowe informacje (tekst pod cennikiem)",
+            ui: { component: "textarea" },
+          },
           {
             type: "object",
             name: "parametry",
@@ -92,6 +99,18 @@ export default defineConfig({
           { type: "string", name: "pytanie", label: "Pytanie", required: true },
           { type: "rich-text", name: "body", label: "Odpowiedź", isBody: true },
           { type: "number", name: "kolejnosc", label: "Kolejność sortowania" },
+        ],
+      },
+      {
+        name: "pages",
+        label: "Strony (Regulamin, Polityka...)",
+        path: "content/pages",
+        format: "md",
+        fields: [
+          { type: "string", name: "tytul", label: "Tytuł", required: true },
+          { type: "string", name: "opis", label: "Krótki opis (meta)" },
+          { type: "datetime", name: "aktualizacja", label: "Data aktualizacji" },
+          { type: "rich-text", name: "body", label: "Treść", isBody: true },
         ],
       },
     ],

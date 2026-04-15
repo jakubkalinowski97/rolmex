@@ -6,6 +6,7 @@ kategoria: content/categories/myjki-cisnieniowe.md
 cena_doba: 200
 cena_weekend: 330
 cena_tydzien: 900
+kaucja: 700
 parametry:
   - nazwa: Zasilanie
     wartosc: '400 V, 3-fazowe'

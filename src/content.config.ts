@@ -26,6 +26,8 @@ const equipment = defineCollection({
     cena_doba: z.number(),
     cena_weekend: z.number(),
     cena_tydzien: z.number(),
+    kaucja: z.number().optional(),
+    dodatkowe_info: z.string().optional(),
     parametry: z
       .array(z.object({ nazwa: z.string(), wartosc: z.string() }))
       .optional(),
@@ -54,4 +56,13 @@ const faq = defineCollection({
   }),
 });
 
-export const collections = { category, equipment, blog, faq };
+const pages = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./content/pages" }),
+  schema: z.object({
+    tytul: z.string(),
+    opis: z.string().optional(),
+    aktualizacja: z.coerce.date().optional(),
+  }),
+});
+
+export const collections = { category, equipment, blog, faq, pages };

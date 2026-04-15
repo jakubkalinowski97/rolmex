@@ -6,6 +6,7 @@ kategoria: content/categories/akcesoria.md
 cena_doba: 30
 cena_weekend: 50
 cena_tydzien: 130
+kaucja: 200
 parametry:
   - nazwa: Pojemność zbiornika
     wartosc: '1,0 l'

@@ -6,6 +6,7 @@ kategoria: content/categories/swidry-glebowe.md
 cena_doba: 200
 cena_weekend: 320
 cena_tydzien: 900
+kaucja: 800
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 4-MIX
