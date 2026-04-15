@@ -1,23 +1,23 @@
 ---
 nazwa: Kosa akumulatorowa STIHL FSA 60 R
 slug: kosa-stihl-fsa60
-zdjecie: /images/stihl-fs55.jpg
+zdjecie: ''
 kategoria: content/categories/kosy-spalinowe.md
-cena_doba: 100
-cena_weekend: 160
-cena_tydzien: 450
-kaucja: 400
+cena_doba: 120
+cena_weekend: 190
+cena_tydzien: 550
+kaucja: 200
 parametry:
   - nazwa: Silnik
-    wartosc: STIHL AK30
-  - nazwa: Pojemność skokowa
-    wartosc: '27,2 cm³'
+    wartosc: Elektryczny
+  - nazwa: ' Napięcie znamionowe'
+    wartosc: 36 V
   - nazwa: Moc
-    wartosc: '0,75–0,8 kW (1,02 KM)'
+    wartosc: 0.30 kW
   - nazwa: Masa
-    wartosc: '4,8 kg'
+    wartosc: 2.9 kg
   - nazwa: Głowica tnąca
-    wartosc: AutoCut C 25-2
+    wartosc: AutoCut C 3-2
 dostepny: true
 wyroziony: false
 ---
