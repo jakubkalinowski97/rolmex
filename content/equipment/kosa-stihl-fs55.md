@@ -6,7 +6,8 @@ kategoria: content/categories/kosy-spalinowe.md
 cena_doba: 100
 cena_weekend: 160
 cena_tydzien: 450
-kaucja: 400
+kaucja: 300
+dodatkowe_info: Żyłka kosa spalinowa/akku (JEDNO NAWINIĘCIE) -10zł
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 2-MIX
