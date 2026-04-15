@@ -3,9 +3,9 @@ nazwa: Myjka wysokociśnieniowa STIHL RE 170 Plus
 slug: myjka-stihl-re170-plus
 zdjecie: /images/stihl-re170-plus.jpg
 kategoria: content/categories/myjki-cisnieniowe.md
-cena_doba: 100
-cena_weekend: 150
-cena_tydzien: 420
+cena_doba: 150
+cena_weekend: 250
+cena_tydzien: 650
 parametry:
   - nazwa: Napięcie
     wartosc: '230 V, 1-fazowa'
