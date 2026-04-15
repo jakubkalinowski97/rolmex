@@ -3,18 +3,18 @@ nazwa: Pilarka spalinowa STIHL MS 182
 slug: pilarka-stihl-ms182
 zdjecie: /images/stihl-ms182.jpg
 kategoria: content/categories/pily-lancuchowe.md
-cena_doba: 80
-cena_weekend: 120
-cena_tydzien: 350
+cena_doba: 150
+cena_weekend: 250
+cena_tydzien: 650
 parametry:
   - nazwa: Silnik
-    wartosc: STIHL 2-MIX, dwusuwowy
+    wartosc: 'STIHL 2-MIX, dwusuwowy'
   - nazwa: Pojemność skokowa
-    wartosc: 35,8 cm³
+    wartosc: '35,8 cm³'
   - nazwa: Moc
-    wartosc: 1,6 kW (2,2 KM)
+    wartosc: '1,6 kW (2,2 KM)'
   - nazwa: Masa (bez zestawu tnącego)
-    wartosc: 4,6 kg
+    wartosc: '4,6 kg'
   - nazwa: Długość prowadnicy
     wartosc: 35 cm (14")
   - nazwa: Podziałka łańcucha
