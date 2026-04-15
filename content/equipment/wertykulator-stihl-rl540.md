@@ -22,7 +22,7 @@ parametry:
   - nazwa: Zalecana powierzchnia
     wartosc: do 2000 m²
 dostepny: true
-wyroziony: false
+wyroziony: true
 ---
 
 Mocny wertykulator spalinowy STIHL RL 540 do regeneracji trawników średnich i dużych, zapewniający skuteczne napowietrzenie i usuwanie mchu. Składany uchwyt dla łatwiejszego transportu i przechowywania.
