@@ -6,7 +6,7 @@ kategoria: content/categories/pily-lancuchowe.md
 cena_doba: 150
 cena_weekend: 250
 cena_tydzien: 650
-kaucja: 600
+kaucja: 300
 parametry:
   - nazwa: Silnik
     wartosc: 'STIHL 2-MIX, dwusuwowy'
