@@ -3,7 +3,7 @@ nazwa: Kosa spalinowa STIHL FS 55
 slug: kosa-stihl-fs55
 zdjecie: /images/stihl-fs55.jpg
 kategoria: content/categories/kosy-spalinowe.md
-cena_doba: 100
+cena_doba: 120
 cena_weekend: 160
 cena_tydzien: 450
 kaucja: 300
