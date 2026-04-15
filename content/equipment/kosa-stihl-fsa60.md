@@ -6,7 +6,8 @@ kategoria: content/categories/kosy-spalinowe.md
 cena_doba: 120
 cena_weekend: 190
 cena_tydzien: 550
-kaucja: 200
+kaucja: 300
+dodatkowe_info: Żyłka kosa spalinowa/akku (JEDNO NAWINIĘCIE) -10zł
 parametry:
   - nazwa: Silnik
     wartosc: Elektryczny
