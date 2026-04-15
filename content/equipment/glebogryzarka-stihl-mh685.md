@@ -5,7 +5,8 @@ zdjecie: /images/stihl-mh685.jpg
 kategoria: content/categories/glebogryzarki.md
 cena_doba: 190
 cena_weekend: 300
-cena_tydzien: 800
+cena_tydzien: 850
+kaucja: 400
 parametry:
   - nazwa: Silnik
     wartosc: Kohler XT800 OHV
