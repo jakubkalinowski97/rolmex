@@ -18,6 +18,7 @@ const equipment = defineCollection({
   schema: z.object({
     nazwa: z.string(),
     slug: z.string(),
+    opis: z.string().optional(),
     zdjecie: z.string().optional(),
     galeria: z
       .array(z.object({ src: z.string(), alt: z.string().optional() }))
@@ -41,6 +42,7 @@ const blog = defineCollection({
   schema: z.object({
     tytul: z.string(),
     slug: z.string(),
+    opis: z.string().optional(),
     zdjecie: z.string().optional(),
     data: z.coerce.date(),
     autor: z.string().optional(),

@@ -38,6 +38,12 @@ export default defineConfig({
         fields: [
           { type: "string", name: "nazwa", label: "Nazwa", required: true },
           { type: "string", name: "slug", label: "Slug URL", required: true },
+          {
+            type: "string",
+            name: "opis",
+            label: "Krótki opis (meta, do wyszukiwarek, ~150 znaków)",
+            ui: { component: "textarea" },
+          },
           { type: "image", name: "zdjecie", label: "Zdjęcie główne" },
           {
             type: "object",
@@ -83,6 +89,12 @@ export default defineConfig({
         fields: [
           { type: "string", name: "tytul", label: "Tytuł", required: true },
           { type: "string", name: "slug", label: "Slug URL", required: true },
+          {
+            type: "string",
+            name: "opis",
+            label: "Krótki opis (meta, do wyszukiwarek, ~150 znaków)",
+            ui: { component: "textarea" },
+          },
           { type: "image", name: "zdjecie", label: "Zdjęcie wyróżniające" },
           { type: "datetime", name: "data", label: "Data publikacji", required: true },
           { type: "string", name: "autor", label: "Autor" },
