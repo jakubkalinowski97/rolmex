@@ -25,4 +25,4 @@ dostepny: true
 wyroziony: true
 ---
 
-Uniwersalna, lekka przecinarka STIHL TS 420 do betonu, stali i innych materiałów budowlanych, stosowana w pracach drogowych i konstrukcyjnych.  System antywibracyjny STIHL, możliwość pracy z wózkiem prowadzącym. 350mm
+Uniwersalna, lekka przecinarka STIHL TS 420 do betonu, stali i innych materiałów budowlanych, stosowana w pracach drogowych i konstrukcyjnych.  System antywibracyjny STIHL, możliwość pracy z wózkiem prowadzącym. Tarcza 350mm
