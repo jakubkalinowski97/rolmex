@@ -3,8 +3,8 @@ nazwa: Traktor ogrodowy STIHL RT 5097Z
 slug: traktor-stihl-rt5097z
 zdjecie: /images/stihl-rt5097z.jpg
 kategoria: content/categories/traktory-ogrodowe.md
-cena_doba: 400
-cena_weekend: 650
+cena_doba: 350
+cena_weekend: 590
 cena_tydzien: 1500
 parametry:
   - nazwa: Silnik
