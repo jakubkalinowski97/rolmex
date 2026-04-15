@@ -3,10 +3,9 @@ nazwa: Glebogryzarka spalinowa STIHL MH 685
 slug: glebogryzarka-stihl-mh685
 zdjecie: /images/stihl-mh685.jpg
 kategoria: content/categories/glebogryzarki.md
-cena_doba: 180
+cena_doba: 190
 cena_weekend: 300
 cena_tydzien: 800
-kaucja: 800
 parametry:
   - nazwa: Silnik
     wartosc: Kohler XT800 OHV
