@@ -6,6 +6,7 @@ kategoria: content/categories/pily-lancuchowe.md
 cena_doba: 100
 cena_weekend: 159
 cena_tydzien: 450
+kaucja: 300
 parametry:
   - nazwa: Moc
     wartosc: 0.90 kW
