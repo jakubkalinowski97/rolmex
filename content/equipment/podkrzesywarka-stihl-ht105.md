@@ -6,6 +6,7 @@ kategoria: content/categories/podkrzesywarki.md
 cena_doba: 190
 cena_weekend: 330
 cena_tydzien: 850
+kaucja: 400
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 4-MIX (czterosuw)
