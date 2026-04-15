@@ -3,9 +3,9 @@ nazwa: Pompa wodna spalinowa STIHL WP 300
 slug: pompa-stihl-wp300
 zdjecie: /images/stihl-wp300.jpg
 kategoria: content/categories/pompy-wodne.md
-cena_doba: 120
-cena_weekend: 180
-cena_tydzien: 500
+cena_doba: 150
+cena_weekend: 300
+cena_tydzien: 650
 parametry:
   - nazwa: Maks. wydajność przepływu
     wartosc: 616 l/min
@@ -16,7 +16,7 @@ parametry:
   - nazwa: Masa
     wartosc: 26 kg
   - nazwa: Silnik
-    wartosc: 4-suw, 212 cm³
+    wartosc: '4-suw, 212 cm³'
 dostepny: true
 wyroziony: false
 ---
