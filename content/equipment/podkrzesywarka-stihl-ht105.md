@@ -3,9 +3,9 @@ nazwa: Podkrzesywarka spalinowa STIHL HT 105
 slug: podkrzesywarka-stihl-ht105
 zdjecie: /images/stihl-ht105.jpg
 kategoria: content/categories/podkrzesywarki.md
-cena_doba: 120
-cena_weekend: 180
-cena_tydzien: 500
+cena_doba: 150
+cena_weekend: 300
+cena_tydzien: 650
 parametry:
   - nazwa: Silnik
     wartosc: STIHL 4-MIX (czterosuw)
@@ -19,4 +19,4 @@ dostepny: true
 wyroziony: false
 ---
 
-Profesjonalna podkrzesywarka STIHL HT 105 na wysięgniku teleskopowym do przycinania gałęzi na dużej wysokości z poziomu ziemi. System antywibracyjny STIHL, ergonomiczny uchwyt wielofunkcyjny, hak do usuwania odciętych gałęzi. Przeznaczona do prac pielęgnacyjnych w sadach, zadrzewieniach i przy drogach.
+Profesjonalna spalinowa podkrzesywarka STIHL HT 105 na wysięgniku teleskopowym (270-390cm) do przycinania gałęzi na dużej wysokości z poziomu ziemi. System antywibracyjny STIHL, ergonomiczny uchwyt wielofunkcyjny, hak do usuwania odciętych gałęzi. Przeznaczona do prac pielęgnacyjnych w sadach, zadrzewieniach i przy drogach.
