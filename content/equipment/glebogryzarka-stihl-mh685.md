@@ -22,7 +22,7 @@ parametry:
   - nazwa: Masa
     wartosc: 46 kg
 dostepny: true
-wyroziony: false
+wyroziony: true
 ---
 
 Mocna glebogryzarka spalinowa STIHL MH 685 do ciężkich gleb i pracy na większych powierzchniach, z biegiem wstecznym ułatwiającym manewrowanie. System antywibracyjny STIHL, centralnie regulowany uchwyt kierujący.
