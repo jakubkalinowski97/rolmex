@@ -18,7 +18,7 @@ parametry:
   - nazwa: Zespół tnący
     wartosc: Multi-Cut / dwukomorowy
 dostepny: true
-wyroziony: false
+wyroziony: true
 ---
 
 Wielofunkcyjny rozdrabniacz spalinowy STIHL GH 460C do gałęzi i odpadów zielonych (do 75mm), przystosowany do intensywnej pracy w ogrodach i terenach zielonych. Dwa oddzielne leje wsadowe do gałęzi i materiału zielonego. Szerokie podwozie i duże koła ułatwiające transport.
