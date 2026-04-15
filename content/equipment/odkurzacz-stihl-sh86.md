@@ -2,6 +2,8 @@
 nazwa: Odkurzacz / dmuchawa ogrodowa STIHL SH 86
 slug: odkurzacz-stihl-sh86
 zdjecie: /images/stihl-sh86.jpg
+galeria:
+  - src: /images/stihl-sh86-2.jpg
 kategoria: content/categories/dmuchawy.md
 cena_doba: 70
 cena_weekend: 100
