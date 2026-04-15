@@ -23,4 +23,4 @@ dostepny: true
 wyroziony: false
 ---
 
-Uniwersalna podkaszarka akumulatorowa STIHL FSA 50 STIHL AK-System cechuje się dużą wydajnością koszenia, niskim ciężarem i wszechstronnymi możliwościami regulacji przy pracach w przydomowym ogrodzie.
+Uniwersalna podkaszarka akumulatorowa STIHL FSA 60 STIHL AK-System cechuje się dużą wydajnością koszenia, niskim ciężarem i wszechstronnymi możliwościami regulacji przy pracach w przydomowym ogrodzie.
