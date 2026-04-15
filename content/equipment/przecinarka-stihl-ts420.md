@@ -6,7 +6,7 @@ kategoria: content/categories/przecinarki.md
 cena_doba: 200
 cena_weekend: 350
 cena_tydzien: 900
-kaucja: 800
+kaucja: 600
 dodatkowe_info: |-
   Do kosztu wynajmu doliczana jest dodatkowa opłata za zużycie tarczy – naliczana 70zł za 1mm
   TARCZA DIAMENTOWA (350mm) 
