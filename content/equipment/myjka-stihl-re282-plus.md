@@ -3,14 +3,14 @@ nazwa: Myjka wysokociśnieniowa STIHL RE 282 Plus
 slug: myjka-stihl-re282-plus
 zdjecie: /images/stihl-re282-plus.jpg
 kategoria: content/categories/myjki-cisnieniowe.md
-cena_doba: 150
-cena_weekend: 220
-cena_tydzien: 600
+cena_doba: 200
+cena_weekend: 330
+cena_tydzien: 900
 parametry:
   - nazwa: Zasilanie
-    wartosc: 400 V, 3-fazowe
+    wartosc: '400 V, 3-fazowe'
   - nazwa: Moc
-    wartosc: 4,1 kW
+    wartosc: '4,1 kW'
   - nazwa: Ciśnienie robocze
     wartosc: 160 bar
   - nazwa: Ciśnienie maksymalne
@@ -18,7 +18,7 @@ parametry:
   - nazwa: Przepływ wody
     wartosc: 700 l/h
   - nazwa: Wąż wysokociśnieniowy
-    wartosc: 15 m, na bębnie
+    wartosc: '15 m, na bębnie'
 dostepny: true
 wyroziony: false
 ---
