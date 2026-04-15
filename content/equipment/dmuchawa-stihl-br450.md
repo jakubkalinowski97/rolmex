@@ -6,7 +6,7 @@ kategoria: content/categories/dmuchawy.md
 cena_doba: 120
 cena_weekend: 200
 cena_tydzien: 550
-kaucja: 500
+kaucja: 350
 parametry:
   - nazwa: Pojemność skokowa
     wartosc: '63,3 cm³'
