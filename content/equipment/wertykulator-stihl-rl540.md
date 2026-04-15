@@ -3,16 +3,16 @@ nazwa: Wertykulator spalinowy STIHL RL 540
 slug: wertykulator-stihl-rl540
 zdjecie: /images/stihl-rl540.jpg
 kategoria: content/categories/wertykulatory.md
-cena_doba: 100
-cena_weekend: 150
-cena_tydzien: 420
+cena_doba: 170
+cena_weekend: 290
+cena_tydzien: 750
 parametry:
   - nazwa: Silnik
     wartosc: HD675 OHV
   - nazwa: Pojemność skokowa
     wartosc: 149 cm³
   - nazwa: Moc
-    wartosc: 2,2 kW (3,0 KM)
+    wartosc: '2,2 kW (3,0 KM)'
   - nazwa: Szerokość robocza
     wartosc: 38 cm
   - nazwa: Głębokość robocza
