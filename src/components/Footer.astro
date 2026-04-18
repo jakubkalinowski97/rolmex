@@ -7,11 +7,19 @@ import { company, navLinks } from "../lib/company";
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
       <!-- Column 1: Brand -->
       <div class="md:col-span-1">
-        <a href="/" class="flex items-center gap-2.5 mb-4">
-          <div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          </div>
-          <span class="text-xl font-extrabold text-white tracking-tight">Rolmex</span>
+        <a href="/" class="inline-flex flex-col items-start leading-none mb-4" aria-label={company.nazwa}>
+          <span class="inline-flex bg-white rounded-lg px-3 py-2">
+            <img
+              src="/images/logo.svg"
+              alt={company.nazwa}
+              width="210"
+              height="36"
+              class="h-8 w-auto"
+            />
+          </span>
+          <span class="mt-1.5 text-[10px] sm:text-xs font-bold italic tracking-wider uppercase text-primary">
+            STIHL / Sklep / Wypożyczalnia
+          </span>
         </a>
         <p class="text-sm leading-relaxed">
           Profesjonalna wypożyczalnia sprzętu ogrodowego w Rutkach-Kossakach. Szybko i tanio.
