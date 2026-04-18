@@ -37,6 +37,7 @@ const images: GalleryImage[] = [
 <Layout
   title={item.data.nazwa}
   description={item.data.opis ?? `Wypożycz ${item.data.nazwa} w Rolmex Rutki-Kossaki — od ${item.data.cena_doba} zł/dobę, ${item.data.cena_weekend} zł/weekend, ${item.data.cena_tydzien} zł/tydzień. Sprawdź parametry i zarezerwuj.`}
+  ogImage={item.data.zdjecie}
 >
   <section class="py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
