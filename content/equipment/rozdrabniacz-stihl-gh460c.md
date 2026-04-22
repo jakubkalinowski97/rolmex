@@ -6,7 +6,7 @@ kategoria: content/categories/rozdrabniacze.md
 cena_doba: 250
 cena_weekend: 400
 cena_tydzien: 1100
-kaucja: 1000
+kaucja: 900
 parametry:
   - nazwa: Silnik
     wartosc: EVC 2000 (czterosuw)
