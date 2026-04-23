@@ -2,8 +2,6 @@
 nazwa: Dmuchawa akumulatorowa STIHL BGA 50
 slug: dmuchawa-stihl-bga50
 zdjecie: /images/stihl-bga50.jpg
-galeria:
-  - {}
 kategoria: content/categories/dmuchawy.md
 cena_doba: 100
 cena_weekend: 180
