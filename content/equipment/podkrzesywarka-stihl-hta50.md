@@ -14,6 +14,8 @@ parametry:
     wartosc: 280 cm
   - nazwa: Łańcuch
     wartosc: 1/4" PICCO
+  - nazwa: Ciężar urządzenia
+    wartosc: 3.6 kg
 dostepny: true
 wyroziony: false
 ---
