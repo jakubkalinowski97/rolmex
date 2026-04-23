@@ -18,10 +18,8 @@ dostepny: true
 wyroziony: false
 ---
 
-Akumulatorowe nożyce do żywopłotu na wysięgniku STIHL HLA 56. Lekkie akumulatorowe nożyce do żywopłotów na wysięgniku
+Akumulatorowe nożyce do żywopłotu na wysięgniku STIHL HLA 56. Lekkie nożyce do żywopłotów na wysięgniku
 
-do cięcia wyższych żywopłotów i krzewów w
+do cięcia wyższych żywopłotów i krzewów w ogrodzie.  Kąt nachylenia regulowany stopniowo w zakresie od -45° do +90°. Długość całkowita 210 cm, ciężar
 
-ogrodzie.  Kąt nachylenia regulowany stopniowo w zakresie od -45° do +90°. Długość całkowita 210 cm, ciężar
-
-3,8 kg. 
+3,8 kg.
