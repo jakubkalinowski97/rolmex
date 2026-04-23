@@ -12,6 +12,8 @@ parametry:
     wartosc: 0.21 kW
   - nazwa: Listwa tnąca
     wartosc: 45 cm
+  - nazwa: Długość całkowita
+    wartosc: 210 cm
 dostepny: true
 wyroziony: true
 ---
@@ -20,6 +22,6 @@ Akumulatorowe nożyce do żywopłotu na wysięgniku STIHL HLA 56. Lekkie akumula
 
 do cięcia wyższych żywopłotów i krzewów w
 
-ogrodzie. Długość całkowita 210 cm, ciężar
+ogrodzie.  Kąt nachylenia regulowany stopniowo w zakresie od -45° do +90°. Długość całkowita 210 cm, ciężar
 
-3,8 kg.
+3,8 kg. 
