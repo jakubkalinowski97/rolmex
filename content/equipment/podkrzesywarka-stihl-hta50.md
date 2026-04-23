@@ -12,8 +12,6 @@ kaucja: 300
 parametry:
   - nazwa: Długość całkowita
     wartosc: 280 cm
-  - nazwa: Maks. wysokość robocza
-    wartosc: do 5 m
   - nazwa: Łańcuch
     wartosc: 1/4" PICCO
 dostepny: true
