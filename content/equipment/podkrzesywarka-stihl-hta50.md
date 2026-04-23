@@ -4,7 +4,7 @@ slug: podkrzesywarka-stihl-hta50
 zdjecie: /images/stihl-hta50.jpg
 galeria:
   - {}
-kategoria: content/categories/podkrzesywarki.md
+kategoria: podkrzesywarki
 cena_doba: 100
 cena_weekend: 150
 cena_tydzien: 450
