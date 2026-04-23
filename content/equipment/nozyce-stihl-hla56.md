@@ -11,7 +11,7 @@ parametry:
   - nazwa: Moc
     wartosc: 0.21 kW
   - nazwa: Listwa tnąca
-    wartosc: 50cm
+    wartosc: 45 cm
 dostepny: true
 wyroziony: true
 ---
