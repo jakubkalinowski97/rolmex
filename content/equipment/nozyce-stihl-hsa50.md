@@ -16,4 +16,4 @@ dostepny: true
 wyroziony: true
 ---
 
-Akumulatorowe nożyce do żywopłotu STIHL HSA 50 to wszechstronne narzędzie do przycinania żywopłotu i pielęgnacji ogrodu w gospodarstwie domowym. Akumulatorowe nożyce do żywopłotu HSA 50 mają listwę tnącą o długości 50 cm.
+Akumulatorowe nożyce do żywopłotu STIHL HSA 50 to wszechstronne narzędzie do przycinania żywopłotu i pielęgnacji ogrodu w gospodarstwie domowym. Nożyce do żywopłotu HSA 50 mają listwę tnącą o długości 50 cm.
