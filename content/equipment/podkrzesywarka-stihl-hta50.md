@@ -2,9 +2,7 @@
 nazwa: Podkrzesywarka akumulatorowa STIHL HTA 50
 slug: podkrzesywarka-stihl-hta50
 zdjecie: /images/stihl-hta50.jpg
-galeria:
-  - {}
-kategoria: podkrzesywarki
+kategoria: content/categories/podkrzesywarki.md
 cena_doba: 100
 cena_weekend: 150
 cena_tydzien: 450
