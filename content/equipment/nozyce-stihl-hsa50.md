@@ -10,7 +10,7 @@ kaucja: 300
 parametry:
   - nazwa: Moc
     wartosc: 0.90 kW
-  - nazwa: Długość noży
+  - nazwa: Listwa tnąca
     wartosc: 50cm
 dostepny: true
 wyroziony: true
