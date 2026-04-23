@@ -3,9 +3,9 @@ nazwa: Kosa akumulatorowa STIHL FSA 60 R
 slug: kosa-stihl-fsa60
 zdjecie: /images/stihl-fsa60.jpg
 kategoria: content/categories/kosy-spalinowe.md
-cena_doba: 120
-cena_weekend: 190
-cena_tydzien: 550
+cena_doba: 100
+cena_weekend: 180
+cena_tydzien: 500
 kaucja: 300
 dodatkowe_info: Żyłka kosa spalinowa/akku (JEDNO NAWINIĘCIE) -10zł
 parametry:
