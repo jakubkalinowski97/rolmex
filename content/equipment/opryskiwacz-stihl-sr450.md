@@ -19,7 +19,7 @@ parametry:
   - nazwa: Zasięg natrysku
     wartosc: 'do 14,5 m'
 dostepny: true
-wyroziony: false
+wyroziony: true
 ---
 
 Plecakowy opryskiwacz spalinowy STIHL SR 450, 2-w-1 (spray + pył), przeznaczony do profesjonalnego stosowania na dużych powierzchniach — sadownictwo, zadrzewienia, zakłady specjalistyczne.
