@@ -13,7 +13,7 @@ parametry:
   - nazwa: Ciężar urządzenia
     wartosc: 2.2 kg
 dostepny: true
-wyroziony: true
+wyroziony: false
 ---
 
 Kompaktowa, wszechstronna akumulatorowa dmuchawa do liści STIHL BGA 50 do zadań związanych z czyszczeniem małych i średnich powierzchni. Ułatwia pracę bez zmęczenia. Płynna regulacja siły nadmuchu pozwala na elastyczne dostosowanie mocy do różnych sytuacji związanych z czyszczeniem.
