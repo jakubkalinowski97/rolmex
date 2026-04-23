@@ -12,6 +12,8 @@ kaucja: 300
 parametry:
   - nazwa: Siła nadmuchu z okrągłą dyszą
     wartosc: 11 N
+  - nazwa: Ciężar urządzenia
+    wartosc: 2.2 kg
 dostepny: true
 wyroziony: false
 ---
