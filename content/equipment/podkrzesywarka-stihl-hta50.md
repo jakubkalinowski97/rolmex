@@ -17,7 +17,7 @@ parametry:
   - nazwa: Ciężar urządzenia
     wartosc: 3.6 kg
 dostepny: true
-wyroziony: false
+wyroziony: true
 ---
 
 Lekka podkrzesywarka akumulatorowa o dużej wydajności cięcia do wszelkich prac związanych
