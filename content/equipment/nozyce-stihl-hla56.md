@@ -15,7 +15,7 @@ parametry:
   - nazwa: Długość całkowita
     wartosc: 210 cm
 dostepny: true
-wyroziony: true
+wyroziony: false
 ---
 
 Akumulatorowe nożyce do żywopłotu na wysięgniku STIHL HLA 56. Lekkie akumulatorowe nożyce do żywopłotów na wysięgniku
