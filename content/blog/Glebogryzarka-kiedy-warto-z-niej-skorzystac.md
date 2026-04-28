@@ -2,7 +2,7 @@
 tytul: Glebogryzarka – kiedy warto z niej skorzystać?
 slug: Glebogryzarka-kiedy-warto-z-niej-skorzystac
 zdjecie: /images/MH-MH700-IM-001_EU-RoW_21714.png
-data: 2026-03-17T00:00:00.000Z
+data: 2026-03-24T00:00:00.000Z
 autor: Rolmex
 tagi:
   - trawnik
