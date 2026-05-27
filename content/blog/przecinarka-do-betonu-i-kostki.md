@@ -3,7 +3,7 @@ tytul: Przecinarka do betonu i kostki – kiedy warto ją wypożyczyć?
 slug: przecinarka-do-betonu-i-kostki
 opis: ''
 zdjecie: /images/T-TS420-E002_EU-RoW_23257.jpg
-data: 2026-04-22T23:00:00.000Z
+data: 2026-05-24T23:00:00.000Z
 autor: Rolmex
 tagi:
   - przecinarka
