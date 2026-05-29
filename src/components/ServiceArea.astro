@@ -1,0 +1,30 @@
+---
+import { obszarDzialania } from "../lib/company";
+---
+
+<section class="py-16 lg:py-24 bg-bg">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Obszar działania</p>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-text">Dowozimy sprzęt pod Twój adres</h2>
+      <p class="mt-4 text-text-light text-lg max-w-2xl mx-auto">
+        Oferujemy dowóz sprzętu ogrodowego i budowlanego do klientów z całego regionu.
+        Nie musisz organizować transportu — przywieziemy maszynę pod wskazany adres.
+      </p>
+    </div>
+
+    <ul class="flex flex-wrap justify-center gap-2 sm:gap-3">
+      {obszarDzialania.map((miasto) => (
+        <li class="inline-flex items-center bg-white border border-border rounded-full px-4 py-2 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          {miasto}
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-10 text-center text-text-light text-sm">
+      Chcesz ustalić szczegóły dowozu?
+      <a href="/kontakt" class="text-primary font-semibold hover:underline">Zadzwoń lub napisz</a> — dogadamy termin i koszt transportu.
+    </p>
+  </div>
+</section>

@@ -6,7 +6,8 @@ import FeaturedEquipment from "../components/FeaturedEquipment.astro";
 import WhyUs from "../components/WhyUs.astro";
 import HomeFaq from "../components/HomeFaq.astro";
 import LatestPosts from "../components/LatestPosts.astro";
-import { company } from "../lib/company";
+import ServiceArea from "../components/ServiceArea.astro";
+import { company, obszarDzialania } from "../lib/company";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -24,6 +25,10 @@ const jsonLd = {
     "postalCode": company.adres.kod,
     "addressCountry": "PL"
   },
+  "areaServed": [
+    { "@type": "City", "name": company.adres.miasto },
+    ...obszarDzialania.map((name) => ({ "@type": "City", "name": name })),
+  ],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -44,13 +49,14 @@ const jsonLd = {
 
 <Layout
   title="Wypożyczalnia sprzętu ogrodowego i budowlanego"
-  description="Rolmex Rutki-Kossaki — wypożyczalnia kosiarek, pilarek, glebogryzarek i sprzętu budowlanego. Atrakcyjne ceny na dobę, weekend i tydzień. Sprawdź katalog i zarezerwuj."
+  description="Rolmex Rutki-Kossaki — wypożyczalnia kosiarek, pilarek, glebogryzarek i sprzętu budowlanego. Obsługujemy Zambrów, Łomżę, Wysokie Mazowieckie, Białystok i okolice. Atrakcyjne ceny na dobę, weekend i tydzień."
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <HeroSection />
   <CategoryGrid />
   <FeaturedEquipment />
   <WhyUs />
+  <ServiceArea />
   <HomeFaq />
   <LatestPosts />
 </Layout>

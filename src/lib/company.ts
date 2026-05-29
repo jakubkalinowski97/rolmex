@@ -28,6 +28,22 @@ export const company = {
   },
 } as const;
 
+export const obszarDzialania = [
+  "Zambrów",
+  "Łomża",
+  "Wysokie Mazowieckie",
+  "Jedwabne",
+  "Szepietowo",
+  "Czyżew",
+  "Tykocin",
+  "Stawiski",
+  "Mońki",
+  "Kolno",
+  "Ciechanowiec",
+  "Brańsk",
+  "Białystok",
+] as const;
+
 export const navLinks = [
   { href: "/", label: "Strona główna" },
   { href: "/katalog", label: "Katalog" },
